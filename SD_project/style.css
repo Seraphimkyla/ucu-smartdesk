@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(145, 0, 0);
+    color: rgb(66, 65, 65);
+}
+.container {
+    margin: 0 15px;
+    
+}
+.form-box {
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+.form-box.active {
+    display: block;
+}
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    width: 120px;
+    height: auto;
+}
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%; /* Makes input fields stretch to full width */
+    padding: 12px;
+    margin: 10px 0;
+    background-color: rgb(220, 220, 220); /* Light gray background */
+    border: none;
+    border-radius: 6px; /* Rounded corners */
+    font-size: 16px;
+    color: black; /* Text color */
+    outline: none; /* Removes default focus outline */
+}
+.remember-forgot {
+    display: flex;
+    font-size: 14.5px;
+    align-items: center;
+    justify-content: space-between; /* Keeps elements spaced out */
+}
+
+.remember-forgot a {
+    margin-left: auto; /* Pushes "Forget password?" to the right */
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+.remember-forgot input[type="checkbox"] {
+    accent-color: green; /* Changes the checkbox color when checked */
+}
+button {
+    display: block;
+    margin: 10px auto;
+    width: 45%;
+    padding: 12px;
+    background: #5631dc;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    transition: 0.5s;
+}
+button:hover {
+    background: #210194;
+}
+p {
+   font-size: 14.5px;
+   text-align: center;
+   margin-bottom: 10px; 
+}
+p a {
+    text-decoration: none;
+}
+p a:hover {
+    text-decoration: underline;
+}
